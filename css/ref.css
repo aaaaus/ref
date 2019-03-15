@@ -1,0 +1,6 @@
+/* change caret (blinking line in text field) color */
+
+input {
+  caret-color: auto; /* for default styling */
+  caret-color: blue; /* for custom styling */
+}
