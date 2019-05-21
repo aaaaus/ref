@@ -15,7 +15,8 @@ fetchAlbums();
 //.then --> called (with the response) after first promise is resolved, returns another promise
 //.then --> called after second promise resolved, with response (json data)
 
-//es2017 syntax
+//es2017 async/await syntax
+
 //async precedes the function containing asyncronous actions, await precedes anything returning a promise, set to a variable
 
 async function fetchAlbums() {
