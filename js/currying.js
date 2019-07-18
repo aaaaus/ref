@@ -1,4 +1,6 @@
-//Closure makes currying possible in JavaScript. It’s ability to retain the state of functions already executed, gives us the ability to create factory🏭 functions — functions that can add a specific value to their argument.
+//Closure makes currying possible in JavaScript.
+//It’s ability to retain the state of functions already executed
+//gives us the ability to create factory 🏭 functions — functions that can add a specific value to their argument
 
 //great article: https://blog.bitsrc.io/understanding-currying-in-javascript-ceb2188c339
 

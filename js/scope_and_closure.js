@@ -1,21 +1,20 @@
-let city = 'New York';
+//SCOPE
 
-function greeting() {
-  console.log(`Hello from ${city}!`);
-}
+//refers to the visibility of variables, or how a computer keeps track of all variables in a program
 
-city = 'Los Angeles';
+//JavaScript uses LEXICAL SCOPING, which allows the nesting of scopes
 
-greeting();
-// log => Hello from Los Angeles!
+//CLOSURE
 
-//as seen above, greeting will reference 'city' at the time of being called, which is then 'Los Angeles'
+//the combination of a function bundled (enclosed) with its surrounding state (lexical environment)
 
 //GLOBAL SCOPE
-//attached to 'window' (in browser)
+
+//top level; attached to 'window' (if in browser)
 
 //LOCAL SCOPE
-//inside a function
+
+//inside a function or block
 
 /////////////////////////////
 
@@ -76,3 +75,31 @@ function inNorthAmerica() {
 
 inNorthAmerica();
 console.log(bestFruit); //error: outside of scope
+
+//block scoping example 2
+
+//NOTE: var cannot be locally scoped to blocks; only functions
+//if block is within a function, var will have that function's scope
+
+{
+  const year = 2300;
+  var era = 'future';
+}
+
+console.log(year); //Uncaught ReferenceError: year is not defined
+console.log(era); // log => future
+
+//////////////////
+
+let city = 'New York';
+
+function greeting() {
+  console.log(`Hello from ${city}!`);
+}
+
+city = 'Los Angeles';
+
+greeting();
+// log => Hello from Los Angeles!
+
+//as seen above, greeting will reference 'city' at the time of being called, which is then 'Los Angeles'
