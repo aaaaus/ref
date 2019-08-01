@@ -7,7 +7,7 @@
 
 //EXECUTION STACK ("CALL STACK")
 
-//it is a stack data structure (stackframe)
+//it is a stack data structure (contains stackframes)
 //global execution context is first (bottom) in stack
 
 
