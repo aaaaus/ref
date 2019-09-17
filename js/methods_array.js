@@ -225,6 +225,12 @@ turtles.slice(2,4) //=> ["Mike", "Don"]
 
 //REARRANGING ELEMENTS OF AN ARRAY
 
+//REPLACING ELEMENTS IN AN ARRAY AT A SPECIFIC INDEX:
+
+function replaceIndex(array, index, newValue) {
+	return [ ...array.slice(0, index), newValue, ...array.slice(index+1, array.length) ]
+}
+
 //reverse
 [1, 2, 3].reverse()
 //=> [3, 2, 1]
