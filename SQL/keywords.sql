@@ -126,7 +126,8 @@ INNER JOIN owner_parks
 WHERE owner_parks.park_id = 3;
 
 --something to keep in mind when working with multiple joins is that each join is working
---off of an intermediate derived table that was created just before it
+--off of an intermediate derived table that was created just before it, see:
+--https://www.interfacett.com/blogs/multiple-joins-work-just-like-single-joins/
 
 --example below traverses several tables to arrive at a where statement from the final join
 
