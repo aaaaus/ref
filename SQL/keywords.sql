@@ -103,7 +103,7 @@ INNER JOIN owner_parks
 ON owners.id = owner_parks.owner_id
 WHERE owner_parks.park_id = 3;
 
---ORDER BY, GROUP BY, LIMIT, HAVING
+--ORDER BY, GROUP BY, LIMIT, HAVING (add examples later)
 
 --PROPER ORDERING OF KEYWORDS:
 
