@@ -1,4 +1,4 @@
 <?php
 
-abs(-6)
+abs(-6);
 //return: 6
