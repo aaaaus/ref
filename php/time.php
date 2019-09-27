@@ -1,3 +1,5 @@
+<?php
+
 //https://www.php.net/manual/en/function.date.php
 
 //date returns a formatted date string, using current time by default
