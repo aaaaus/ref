@@ -1,3 +1,5 @@
+<?php
+
 //working with arrays 
 
 //array_map
