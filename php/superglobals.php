@@ -1,6 +1,7 @@
 <?php
 
 //Superglobals are built-in variables that are always available in all scopes
+//Further reading: https://www.php.net/manual/en/language.variables.superglobals.php
 
 $GLOBALS
 $_SERVER
