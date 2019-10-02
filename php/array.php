@@ -2,6 +2,7 @@
 
 //working with arrays 
 
+
 //array_map
 
 $names = ['jon','alexis','sammy'];
@@ -17,6 +18,18 @@ print_r($formatted_names);
 //  [2] => Sammy
 //)
 
+
+//array_unique 
+
+$nums = [1, 1, 2, 2, 3, 3];
+print_r(array_unique($nums));
+// (
+//     [0] => 1
+//     [2] => 2
+//     [4] => 3
+// )
+
+
 //range
 
 range(7,11);
@@ -27,3 +40,4 @@ range(7,11);
 //  [3] => 10
 //  [4] => 11
 //)
+
