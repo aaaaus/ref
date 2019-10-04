@@ -2,6 +2,14 @@
 
 //working with arrays 
 
+//array_keys
+
+$item = [
+  "type" => "shirt",
+  "cost" => 25
+];
+
+array_keys($item) // [ 'type', 'cost' ]
 
 //array_map
 
@@ -26,6 +34,23 @@ print_r(array_unique($nums));
 // (
 //     [0] => 1
 //     [2] => 2
+//     [4] => 3
+// )
+
+
+//quick reference
+
+$nums = [1, 2, 3, 4, 5];
+
+count($nums); //return: 5
+in_array(3, $nums); //return: true
+
+shuffle($nums);
+// (
+//     [0] => 5
+//     [1] => 2
+//     [2] => 1
+//     [3] => 4
 //     [4] => 3
 // )
 
