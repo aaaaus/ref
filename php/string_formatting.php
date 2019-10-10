@@ -7,6 +7,13 @@ $sentence = sprintf('I am feeling %s and I want to %s.', $mood, $action);
 
 //return: 'I am feeling hungry and I want to eat pasta'
 
+//str_replace
+$my_mood = str_replace("blank", "happy", "I am feeling blank");
+
+//preg_replace
+
+//misc
+
 ucfirst('new york'); //converts the first character of a string to uppercase
 //return: 'New york'
 
