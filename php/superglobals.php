@@ -4,7 +4,9 @@
 //Further reading: https://www.php.net/manual/en/language.variables.superglobals.php
 
 $GLOBALS
-$_SERVER
+  
+  
+$_SERVER //is an array containing information such as headers, paths, and script locations.
 
 $_GET //an associative array of variables passed to the current script via URL parameters (aka query string)
 
