@@ -1,6 +1,6 @@
 ### React.createElement
 
-JSX elements are just syntactic sugar for calling React.createElement(*component, props, ...children*).
+JSX elements are just syntactic sugar for calling React.createElement(**component, props, ...children**).
 
 Arguments:
 * component (variable), or element (string, e.g. 'div')
