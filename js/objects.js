@@ -19,7 +19,20 @@ const state = 'maryland'
 capitalCities[state]
 //=> "Annapolis"
 
+//****************
+//ARRAY CONVERSION
+//****************
 
+const animals = { snake: '🐍', whale: '🐋' };
+
+Object.keys(animals);
+//["snake", "whale"]
+
+Object.values(animals);
+//["🐍", "🐋"]
+
+Object.entries(animals);
+//[ ["snake", "🐍"], ["whale", "🐋"] ]
 
 //ES2015 notation
 
