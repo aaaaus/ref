@@ -267,3 +267,10 @@ unitArray3.sort(function (unit1, unit2) {
 	if (unit1.number.slice(-1) < unit2.number.slice(-1)) return -1;
 
 });
+
+//ES6 Array Destructuring
+
+const [head, ...tail] = [1,2,3];
+
+head //=> 1
+tail //=> [2, 3]
