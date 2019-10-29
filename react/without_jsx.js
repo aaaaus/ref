@@ -13,5 +13,3 @@ class Hello extends React.Component {
     return React.createElement('div', null, `Hello ${this.props.toWhat}`);
   }
 }
-
-//React.createElement(element/component, props, ...children);
