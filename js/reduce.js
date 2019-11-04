@@ -23,6 +23,22 @@ const prices = [4, 2, 12, 6];
 prices.reduce((acc, cur) => acc + cur);
 //=> 24
 
+//AVERAGE OF AN ARRAY
+
+const grades = [88, 90, 92, 94]; //avg should be 91
+
+const average = (num_array) => {
+  return num_array.reduce((total, num, index, array) => {
+    if (index === (array.length - 1)) {
+      return (total + num) / array.length;
+    }
+    return total + num;
+  }, 0);
+};
+
+average(grades);
+//=> 91
+
 //SUM OF OBJECT VALUES
 
 const racers = [
