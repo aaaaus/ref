@@ -5,6 +5,7 @@ DROP TABLE dogs;
 DROP TABLE owners;
 DROP TABLE parks;
 DROP TABLE owner_parks;
+DROP TABLE more_dogs;
 
 CREATE TABLE cats (id INTEGER PRIMARY KEY, name TEXT);
 
@@ -152,3 +153,14 @@ INNER JOIN owner_parks
 INNER JOIN parks
   ON owner_parks.park_id = parks.id
 GROUP BY parks.name;
+
+--USING SELECT with INSERT INTO
+
+--create 'more_dogs' table, insert 'Dude'
+
+CREATE TABLE more_dogs (id INTEGER PRIMARY KEY, name TEXT, age INTEGER, breed TEXT);
+
+INSERT INTO more_dogs (name, age, breed)
+SELECT dogs.name, dogs.age, dogs.breed
+FROM dogs
+WHERE dogs.name = 'Dude'
