@@ -1,4 +1,4 @@
-//IIFE FUNCTIONS (Immediately Invoked Function Expression)
+//IIFE (Immediately Invoked Function Expression)
 
 //are immediately invoked when defined
 //good way of protecting scope of your function and variables within it
@@ -23,3 +23,15 @@ addTogether();
  })();
 
 //neat
+
+//IIFE with arguments
+
+const myAccount = { owner: "Austin", balance: 3000 };
+
+//add 1000 to account:
+(function(account) {
+  account.balance += 1000;
+})(myAccount);
+
+myAccount;
+//{ owner: "Austin", balance: 4000 }
