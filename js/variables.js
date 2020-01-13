@@ -35,3 +35,9 @@ var weather = 'rainy' //redeclaration and reassignment
 //hoisting: ReferenceError when accessing a variable before it is declared
 //cannot be redeclared
 //cannot be assigned a new value, but is NOT immutable
+
+//Setting multiple variables at once
+
+var firstName = 'Joe', //'Joe'
+    middleName, //undefined
+    lastName; //undefined
